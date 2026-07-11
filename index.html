@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./tailwind.config.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="antialiased m-0 p-0 box-border text-text-main overflow-x-hidden">
+    <div class="w-full">
+      <main
+        class="relative w-full h-[60vh] md:h-[70vh] lg:h-screen bg-[url('./resources/header-bg.jpg')] bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center text-white"
+      >
+        <header
+          class="absolute top-0 w-full max-w-[1200px] mx-auto flex justify-between items-center py-[25px] px-[20px] z-10"
+        >
+          <div class="logo">
+            <a
+              href="#"
+              class="text-primary font-sans text-[26px] font-bold no-underline tracking-[1px]"
+            >
+              <img
+                src="./resources/navbar-logo.png"
+                alt="Logo"
+                class="h-[40px] block"
+              />
+            </a>
+          </div>
+
+          <button
+            id="menu-btn"
+            class="block lg:hidden bg-transparent border-none text-white text-[24px] cursor-pointer z-[1001] transition-colors duration-300 hover:text-primary"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <nav
+            id="mobile-menu"
+            class="fixed top-0 -right-full w-[250px] h-screen bg-dark/95 pt-[100px] px-[30px] transition-all duration-400 shadow-2xl z-50 lg:static lg:w-auto lg:h-auto lg:bg-transparent lg:p-0 lg:shadow-none flex flex-col lg:flex-row items-start lg:items-center"
+          >
+            <ul
+              class="flex flex-col lg:flex-row gap-[30px] lg:gap-[35px] list-none"
+            >
+              <li>
+                <a
+                  href="#services"
+                  class="text-white text-[18px] lg:text-[14px] uppercase font-sans tracking-[1px] transition-colors duration-300 hover:text-primary"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-white text-[18px] lg:text-[14px] uppercase font-sans tracking-[1px] transition-colors duration-300 hover:text-primary"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-white text-[18px] lg:text-[14px] uppercase font-sans tracking-[1px] transition-colors duration-300 hover:text-primary"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="text-white text-[18px] lg:text-[14px] uppercase font-sans tracking-[1px] transition-colors duration-300 hover:text-primary"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-white text-[18px] lg:text-[14px] uppercase font-sans tracking-[1px] transition-colors duration-300 hover:text-primary"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <section class="text-center px-[20px] mt-[60px]">
+          <p
+            class="font-script text-[28px] md:text-[40px] italic mb-[20px] text-white"
+          >
+            Welcome to Our Studio!
+          </p>
+          <h2
+            class="font-sans text-[40px] md:text-[72px] font-bold leading-[1.2] md:leading-[1.1] mb-[30px] md:mb-[50px] uppercase tracking-[1px] text-white"
+          >
+            it's nice to meet you
+          </h2>
+          <button
+            class="bg-primary text-white font-sans text-[16px] md:text-[18px] font-bold uppercase py-[15px] px-[30px] md:py-[20px] md:px-[45px] rounded-[5px] transition-all duration-300 hover:bg-primary-hover hover:-translate-y-[2px]"
+          >
+            tell me more
+          </button>
+        </section>
+      </main>
+
+      <section class="py-[60px] md:py-[100px] bg-white" id="services">
+        <div class="max-w-[1200px] mx-auto w-full">
+          <div class="text-center mb-[40px] md:mb-[70px] mt-[20px]">
+            <h2
+              class="font-sans text-[40px] font-bold text-dark uppercase mb-[15px] tracking-[1px]"
+            >
+              Services
+            </h2>
+            <p class="font-serif text-[16px] italic text-text-muted">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-[40px] p-5 lg:px-0 text-center"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[100px] h-[100px] bg-primary rounded-full flex items-center justify-center mb-[25px]"
+              >
+                <i class="fa-solid fa-shopping-cart text-white text-[50px]"></i>
+              </div>
+              <h3 class="font-sans text-[24px] font-bold text-dark mb-[15px]">
+                E-Commerce
+              </h3>
+              <p
+                class="font-sans text-[14px] leading-[1.7] text-text-muted px-[10px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[100px] h-[100px] bg-primary rounded-full flex items-center justify-center mb-[25px]"
+              >
+                <i class="fa-solid fa-laptop text-white text-[50px]"></i>
+              </div>
+              <h3 class="font-sans text-[24px] font-bold text-dark mb-[15px]">
+                Responsive Design
+              </h3>
+              <p
+                class="font-sans text-[14px] leading-[1.7] text-text-muted px-[10px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[100px] h-[100px] bg-primary rounded-full flex items-center justify-center mb-[25px]"
+              >
+                <i class="fa-solid fa-lock text-white text-[50px]"></i>
+              </div>
+              <h3 class="font-sans text-[24px] font-bold text-dark mb-[15px]">
+                Web Security
+              </h3>
+              <p
+                class="font-sans text-[14px] leading-[1.7] text-text-muted px-[10px]"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                maxime quam architecto quo inventore harum ex magni, dicta
+                impedit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[60px] md:py-[100px] bg-bg-light" id="portfolio">
+        <div class="max-w-[1200px] mx-auto w-full">
+          <div class="text-center mb-[40px] md:mb-[70px] mt-[20px]">
+            <h2
+              class="font-sans text-[40px] font-bold text-dark uppercase mb-[15px] tracking-[1px]"
+            >
+              Portfolio
+            </h2>
+            <p class="font-serif text-[16px] italic text-text-muted">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] p-[30px] md:px-[30px] lg:px-0"
+          >
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/01-thumbnail.jpg"
+                  alt="Threads"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Threads
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Illustration
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/02-thumbnail.jpg"
+                  alt="Explore"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Explore
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Graphic Design
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/03-thumbnail.jpg"
+                  alt="Finish"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Finish
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Identity
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/04-thumbnail.jpg"
+                  alt="Lines"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Lines
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Branding
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/05-thumbnail.jpg"
+                  alt="Southwest"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Southwest
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Website Design
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white shadow-[0_4px_6px_rgba(0,0,0,0.02)] transition-transform duration-300 hover:-translate-y-[5px]"
+            >
+              <div class="w-full h-[250px] overflow-hidden">
+                <img
+                  src="./resources/portfolio/06-thumbnail.jpg"
+                  alt="Window"
+                  class="w-full h-full object-cover block"
+                />
+              </div>
+              <div class="text-center p-[25px]">
+                <h4 class="font-sans text-[20px] font-bold text-dark mb-[8px]">
+                  Window
+                </h4>
+                <p class="font-serif text-[14px] italic text-text-muted">
+                  Photography
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[60px] md:py-[100px] bg-white" id="team">
+        <div class="max-w-[1200px] mx-auto w-full">
+          <div class="text-center mb-[40px] md:mb-[70px] mt-[20px]">
+            <h2
+              class="font-sans text-[40px] font-bold text-dark uppercase mb-[15px] tracking-[1px]"
+            >
+              Our Amazing Team
+            </h2>
+            <p class="font-serif text-[16px] italic text-text-muted">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 lg:grid-cols-3 gap-[40px] md:gap-[50px] px-[30px] lg:px-0 text-center mb-[50px]"
+          >
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[220px] h-[220px] rounded-full overflow-hidden border-[7px] border-[#eceeef] mb-[25px]"
+              >
+                <img
+                  src="./resources/team/1.jpg"
+                  alt="Kay Garland"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="font-sans text-[22px] font-bold text-dark mb-[5px]">
+                Kay Garland
+              </h3>
+              <p class="font-sans text-[14px] text-text-muted mb-[20px]">
+                Lead Designer
+              </p>
+              <div class="flex gap-[12px]">
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[220px] h-[220px] rounded-full overflow-hidden border-[7px] border-[#eceeef] mb-[25px]"
+              >
+                <img
+                  src="./resources/team/2.jpg"
+                  alt="Larry Parker"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="font-sans text-[22px] font-bold text-dark mb-[5px]">
+                Larry Parker
+              </h3>
+              <p class="font-sans text-[14px] text-text-muted mb-[20px]">
+                Lead Marketer
+              </p>
+              <div class="flex gap-[12px]">
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="w-[220px] h-[220px] rounded-full overflow-hidden border-[7px] border-[#eceeef] mb-[25px]"
+              >
+                <img
+                  src="./resources/team/3.jpg"
+                  alt="Diana Petersen"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h3 class="font-sans text-[22px] font-bold text-dark mb-[5px]">
+                Diana Petersen
+              </h3>
+              <p class="font-sans text-[14px] text-text-muted mb-[20px]">
+                Lead Developer
+              </p>
+              <div class="flex gap-[12px]">
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a
+                  href="#"
+                  class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-[800px] mx-auto text-center px-[15px] lg:px-[30px]">
+            <p class="font-sans text-[14px] leading-[1.7] text-text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
+              corporis ea, alias ut unde.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-[60px] px-[30px] lg:px-0 bg-white">
+        <div
+          class="max-w-[1200px] mx-auto w-full flex flex-col md:flex-row justify-around items-center flex-wrap gap-[20px] md:gap-[30px]"
+        >
+          <a href="#"
+            ><img
+              src="./resources/logos/envato.jpg"
+              alt="Envato"
+              class="max-h-[40px] w-auto opacity-70 transition-opacity duration-300 hover:opacity-100"
+          /></a>
+          <a href="#"
+            ><img
+              src="./resources/logos/designmodo.jpg"
+              alt="Designmodo"
+              class="max-h-[40px] w-auto opacity-70 transition-opacity duration-300 hover:opacity-100"
+          /></a>
+          <a href="#"
+            ><img
+              src="./resources/logos/themeforest.jpg"
+              alt="Themeforest"
+              class="max-h-[40px] w-auto opacity-70 transition-opacity duration-300 hover:opacity-100"
+          /></a>
+          <a href="#"
+            ><img
+              src="./resources/logos/creative-market.jpg"
+              alt="Creative Market"
+              class="max-h-[40px] w-auto opacity-70 transition-opacity duration-300 hover:opacity-100"
+          /></a>
+        </div>
+      </section>
+
+      <footer class="py-[25px] bg-white border-t border-[#eceeef]">
+        <div
+          class="max-w-[1200px] mx-auto w-full flex flex-col lg:flex-row justify-between items-center font-sans text-[14px] gap-[15px] lg:gap-0 text-center"
+        >
+          <div class="text-text-muted">
+            <p>Copyright &copy; Your Website 2026</p>
+          </div>
+          <div class="flex gap-[12px]">
+            <a
+              href="#"
+              class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-[40px] h-[40px] bg-dark text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:bg-primary hover:-translate-y-[3px]"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="flex gap-[20px]">
+            <a
+              href="#"
+              class="text-primary transition-all duration-300 hover:underline"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-primary transition-all duration-300 hover:underline"
+              >Terms of Use</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
